@@ -1,0 +1,48 @@
+/*Responsive*/
+@media only screen and (max-width : 1090px ){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 475px;
+        flex-direction: column;
+        transition: all 0.4s ;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .paras{
+        padding: 0px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-nav-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+    .section{
+        flex-direction: column-reverse;
+        height : 40%;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .logo img{
+        height: 24px;
+        width: 26%;
+    }
+}

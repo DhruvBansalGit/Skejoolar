@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skejoolar - Ab Banega India Panctual</title>
+    <script src="https://kit.fontawesome.com/2d11d15e86.js" crossorigin="anonymous"></script>
+    <link href="../img/college.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="../responsive.css">
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-nav-resp">
+            <div class="logo"><img src="img/img.jpg" alt="Logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="/admin1">Admin</a></li>
+        </ul>
+        <div class="rightnav v-nav-resp">
+            <input type="text" class="search" id="search">
+            <button class="btn btn-sm"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div id="home"></div>
+    <section class="background first-section">
+        <div class="box-main">
+            <div class="firsthalf">
+                <div class="text-big">
+                    Let's Not Forget Anything
+                </div>
+                <div class="text-small sm">This website would not let you forget Your main event.
+                    Join any lecture any session anywhere.One step towards creative India
+                </div>
+                <div class="button">
+                    <button class="btn"> <a href="https://www.bpitindia.com/">Subscribe</a></button>
+                    <button class="btn"><a href="https://www.youtube.com/watch?v=oCyPIDVGLdE">Watch Video</a></button>
+                </div>
+            </div>
+            <div class="secondhalf"><img src="img/img.jpg" alt="Badiya Image"></div>
+        </div>
+    </section>
+    <div id="about"></div>
+    <section class="section" data-aos="zoom-in" >
+        <div class="paras">
+        <div class="secTag text-big" >About This Website</div>
+        <div class="secSubTag text-small">Welcome to our website.This website helps all the students within the college to join any meeting or sessions or webinar of their respectives club in right time and Admin of each club can post the link , time and event of their club and the users or member of their club can accesses this meeting link in time </div>
+    </div>
+        <div class="thumbnail">
+            <img src="img/about.jpg" alt="" class="imgFluid">
+        </div>
+    </section>
+    <div id="services"></div>
+    <section class="section left" data-aos="zoom-in">
+        <div class="paras">
+        <div class="secTag text-big">Services to Admins of Societies</div>
+        <div class="secSubTag text-small">We Give Services to the Admins/Heads of the societies in which the head/Admin is given by unique id by us so that they can login/signup and use this website. After login they can add modify delete there events individually in particular time and they can also see other societies events.So that Collision between the times cannot be held. Heads can Access their particular society cards for adding their events. </div>
+    </div>
+        <div class="thumbnail">
+            <img src="img/login.jpeg" alt="" class="imgFluid">
+        </div>
+    </section>
+    <section class="section" data-aos="zoom-in">
+        <div class="paras">
+        <div class="secTag text-big">Services to Students</div>
+        <div class="secSubTag text-small">In This website all the student admin/heads(without login) will be given by Student Tag which is on the right hand side of the navbar. In this Student Tag anyone can see all the events by their respective societies . In the Events Student will be provided by the name of the society title , description/venue , date of their events</div>
+    </div>
+        <div class="thumbnail">
+            <img src="img/studentservices.jpeg" alt="" class="imgFluid thirdimg">
+        </div>
+        <div id="contact"></div>
+    </section>
+    <section class="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <form action="/contact" method="post" class="Contact-form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your Email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Enter your Concern"></textarea>
+            <button class="btn btn-dark">Submit</button>
+        </form>
+            <button class="btn btn-dark reset">Reset</button>
+    </section>
+    <footer class="footer background">
+        Copyright &copy; 2023 - www.skejoolar.com All rights reserved
+    </footer>
+    <script defer src="../resp.js"></script>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 200,
+        duration: 1000
+    });
+  </script>
+</body>
+
+</html>

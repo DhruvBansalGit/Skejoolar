@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Dashboard</title>
+    <link rel="stylesheet" href="student.css">
+    <link href="../img/dashboard.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2d11d15e86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+   <div class="sidebar">
+    <header>Student's Dashboard</header>
+    <ul>
+        <li><a href="/" style="text-decoration: none;"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="/student" style="text-decoration: none;"> <i class="fa-sharp fa-solid fa-users"></i>Societies</a></li>
+        <li><a href="/calendar2" style="text-decoration: none;"><i class="fas fa-calendar-week"></i>Events</a></li>
+        <li><a href="/#about" style="text-decoration: none;"><i class="fas fa-question-circle"></i>About</a></li>
+        <li><a href="/donate" style="text-decoration: none;"><i class="fas fa-link"></i>Donate</a></li>
+        
+    </ul>
+   </div> 
+   <section class="event-list">
+    <h2 style="text-align:center;">Events</h2>
+    <div class="outercolor-box">
+
+    <div class="color-box define-box">Define</div>
+    <div class="color-box bajrang-box">Bajrang</div>
+    <div class="color-box enter-box">Enterpeneur</div>
+    </div>
+  <table class="table" id="showusers" >
+  <thead class="hiv">
+    <tr>
+      <th scope="col" style="background-color: yellow;">Society name</th>
+      <th scope="col" style="background-color: cyan;">Title</th>
+      <th scope="col" style="background-color: cyan;">Description</th>
+      <th scope="col" style="background-color: cyan;">Date</th>
+    </tr>
+  </thead>
+  
+</table>
+    
+   </section>
+   <script src="../student.js"></script>
+</body>
+</html>

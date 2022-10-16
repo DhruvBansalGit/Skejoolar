@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    cursor: pointer;
+    top: 0;
+    z-index: 1;
+} 
+.logo{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+   height: 50px;
+   width: 54px;
+   border: 3px solid white;
+   border-radius: 50px;
+}
+.nav-list{
+    width: 70%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}  
+.nav-list li{
+    padding: 26px 30px ;
+}  
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+}
+.nav-list li a:hover{
+    color: gray;
+}
+.rightnav{
+    padding: 0 23px;
+    width: 30%;
+    text-align: right;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgb(0, 0, 0,0.7)url(../img/bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+/* Section */
+.first-section{
+    height: 100vh;
+  
+
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firsthalf{
+    width: 75%;
+}
+.secondhalf{
+    width: 30%;
+}
+.secondhalf img{
+    border: 4px solid white;
+    border-radius: 119px;
+    width: 154px;
+    /* padding: 7px 0; */
+    height: 140px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+font-size: 40px;
+text-align: center;
+}
+.text-small{
+    text-align: center;
+font-size: 18px;
+}
+.thirdimg{
+    width: 275px;
+}
+.btn{
+    font-size: 20px;
+    padding: 8px 20px;
+    margin: 9px 3px;
+    border: 2px solid white;
+    outline: none;
+    background:none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn-sm{
+    vertical-align: center;
+    outline: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+/*Second Section*/
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    height: 500px;
+    /* border: 2px solid black; */
+    border-radius: 39px;
+    margin-bottom: 58px;
+    margin-top: 59px;
+    padding-left: 30px;
+    padding-right: 33px;
+    color: white;
+    background-color: rgba(7, 37, 90, 0.2);
+    /* box-shadow: 10px 10px 4px 4px rgba(51,169,254,.2); */
+}
+.left{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0 65px ;
+}
+.secTag{
+    margin-bottom: 10px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+.imgFluid{
+    border: 4px solid black;
+    border-radius: 18px;
+    height: 240px;
+    display: block;
+    margin: auto;
+    margin-top: 19px;
+}
+/*third Section*/
+.contact{
+    height: 800px;
+    background-color: rgb(209, 255, 255);
+}
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 35px;
+}
+.Contact-form{
+    max-width:62%;
+    margin: 42px auto;
+}
+.form-input{
+    text-align: center;
+    padding: 5px 3px;
+    margin: 18px 0;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+textarea{
+    margin: auto;
+}
+.btn-dark{
+    display: block;
+    margin: 6px auto;
+    width: 40%;
+    color: black;
+    border: 2px solid black;
+}
+.footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    color: white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    cursor: pointer;
+
+}
+.line{
+    width: 40px;
+    background-color: white;
+    height: 4px;
+    margin: 7px 3px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.background .btn a {
+    text-decoration: none;
+    color: white;
+}
+body{
+    scroll-behavior: smooth;
+    background-color: #121e2a
+}
+.reset{
+    width: 25%;
+}

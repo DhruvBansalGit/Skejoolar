@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events-Calendar</title>
+    <link href="../img/calendar.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="../evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" href="../evo-calendar.min.css">
+    <link rel="stylesheet" href="../calendar.css">
+    <script src="https://kit.fontawesome.com/2d11d15e86.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+   <div class="sidebar">
+    <header>Student's Dashboard</header>
+    <ul>
+        <li><a href="/" style="text-decoration: none;"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="/student" style="text-decoration: none;"> <i class="fa-sharp fa-solid fa-users"></i>Societies</a></li>
+        <li><a href="/calendar2" style="text-decoration: none;"><i class="fas fa-calendar-week"></i>Events</a></li>
+        <li><a href="/#about" style="text-decoration: none;"><i class="fas fa-question-circle"></i>About</a></li>
+        <li><a href="/donate" style="text-decoration: none;"><i class="fas fa-link"></i>Donate</a></li>
+        
+    </ul>
+   </div> 
+
+    <section>
+
+    
+    <div class="hero">
+
+        <div id="calendar"></div>
+
+    </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="../evo-calendar.min.js"></script>
+    <script>
+        var keys = Object.keys(localStorage);
+        console.log(keys.length);
+        if(keys.length){
+            for(let i = 0;i<keys.length-1;i++){
+                
+                console.log(keys[i]);
+
+            }
+        }
+        var data1 = JSON.parse(localStorage.getItem('define'))?JSON.parse(localStorage.getItem('define')):[]
+        var data2 = JSON.parse(localStorage.getItem('bajrang'))?JSON.parse(localStorage.getItem('bajrang')):[]
+        var data3 = JSON.parse(localStorage.getItem('enter'))?JSON.parse(localStorage.getItem('enter')):[]
+        $(document).ready(function () {
+            if (data1.length > 0 || data2.length>0 || data3.length > 0) {
+                const ar = []
+                 for(let i = 0;i < data1.length;i++){
+                    ar.push({
+                            id: data1[i].title,
+                            name: data1[i].title + " ~ by " + "define",
+                            date: data1[i].date,
+                            type: 'event'
+                    });
+                }
+                const ar1 = []
+                 for(let i = 0;i < data2.length;i++){
+                    ar.push({
+                            id: data2[i].title,
+                            name: data2[i].title + " ~ by " + "bajrang",
+                            date: data2[i].date,
+                            type: 'event'
+                    });
+                }
+                const ar2 = []
+                 for(let i = 0;i < data3.length;i++){
+                    ar.push({
+                            id: data3[i].title,
+                            name: data3[i].title + " ~ by " + "Enterpeneur",
+                            date: data3[i].date,
+                            type: 'event'
+                    });
+                }
+                $('#calendar').evoCalendar({
+                        calendarEvents: ar,ar1,ar2
+                })
+               
+            }
+            else {
+                 $('#calendar').evoCalendar({
+                    calendarEvents: [{
+                        id: 'event1',
+                        name: 'No events',
+                        date: 'October 5,2022',
+                        type: ''
+                    }]
+                })
+               
+            }
+        })
+    </script>
+    <script src="../define.js"></script>
+</body>
+
+</html>

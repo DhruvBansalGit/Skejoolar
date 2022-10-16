@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Make your to-do list here..!!">
+    <meta name="keywords" content="todo, list, reminder, notes">
+    <meta name="author" content="Chirag">
+    <link href="../img/icon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>BAJRANG</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://localhost:3000/admin1" style="margin:auto;">BAJRANG</a>
+
+            <form class="d-flex my-2" style="margin:auto;">
+                <input class="form-control me-2" type="search" placeholder="Search by date or title" aria-label="Search"
+                    id="search">
+            </form>
+
+        </div>
+    </nav>
+    <div class="alert alert-success my-2" role="alert" id="success" style="display: none;">
+        Events added successfully..!!
+    </div>
+    <div class="container my-5">
+        <h1 class="text-center my-5">Add Events here..!!</h1>
+        <div class="card">
+            <div class="card-body">
+                <label for="noteTitle" class="form-label">Event Title*</label>
+                <input type="text" class="form-control" id="noteTitle"
+                    style="text-transform: uppercase;background: #e6e6e6;border:none;">
+
+                <div class="alert alert-danger my-2" role="alert" id="emptyField" style="display: none;">
+                    Events Title cannot be empty..!!
+                </div>
+
+                <label for="noteDescp" class="form-label mt-3">Events Description And Meet link</label>
+                <textarea type="text" class="form-control" id="noteDescp" rows="3"
+                    style="background: #e6e6e6;border:none;"></textarea>
+
+                <label for="noteDate" class="form-label mt-3">Event Date</label>
+                <input type="date" min="2000-01-10" class="form-control" id="noteDate"
+                    style="background: #e6e6e6;border:none;">
+
+
+            </div>
+
+            <div class="row container-fluid" id="btn-container" style="margin: 0;">
+                <button class="btn btn-primary my-4" id="addButton" style="width:100%;" onclick="addNote()">Add
+                    Event</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container my-5">
+
+        <h1 class="text-center my-5">Your Events..!!</h1>
+        <div id="savedNotes" class="row container-fluid" style="margin: 0;">
+
+        </div>
+    </div>
+
+    <div class="alert bg-dark text-white text-center my-0" role="alert">
+
+        <ul style="list-style-type: none; margin: 0;padding: 0;">
+
+            <li>
+                <div class="form-check form-switch" style="margin:auto; float:left">
+                    <label class="form-check-label text-light" for="dark-light">Theme</label>
+                    <input class="form-check-input" type="checkbox" id="dark-light">
+
+                </div>
+
+                <div class="form-check form-switch" style="margin:auto; float:right">
+                    <input class="form-check-input" type="checkbox" id="securityCheck">
+                    <label class="form-check-label text-light" for="securityCheck">Password</label>
+                </div>
+            </li>
+
+            <br>
+            <hr>
+
+            <li>To reset password, toggle password off and on again.</li>
+            <li>All the data is stored on your own device.</li>
+            <li>However, it will be lost if web browser is uninstalled or its data is cleared.</li>
+        </ul>
+    </div>
+
+
+    <div class="card" id='modal' style="display:none;background:#fff;">
+        <div class="card-body" style="position: relative;">
+            <h1 class="card-title text-center">Set Password</h1>
+            <hr>
+
+            <label for="" class="form-label">Password</label>
+            <input type="text" class="form-control" id="docPassword"
+                style="background: #e6e6e6;border:none;">
+
+            <button class="btn btn-primary my-4" id="addPassword" style="width:100%;" onclick="addPassword()">Set Password</button>
+            <button class="btn btn-primary" id="addPasswordClose" style="width:100%;" onclick="addPasswordClose()">Cancel</button>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+<script src="../bajrang.js"></script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <title>Skejoolar-Login/SignUp</title>
+    <link rel="stylesheet" href="../register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../respreg.js"></script>
+    <link href="../img/login.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-nav-resp">
+            <div class="logo"><img src="img/img.jpg" alt="Logo"></div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact Us</a></li>
+            <li><a href="/register">Login/signup</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form action="/register" method="post">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="username" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="password" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form action="/login" method="post">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="password" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+     <footer class="footer background">
+        Copyright &copy; 2023 - www.Skejooler.com All rights reserved
+    </footer>
+</body>
+
+</html>
