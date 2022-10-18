@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/SocietyDB" || process.env.MONGO_URI,{
+const DB = "mongodb+srv://dhruv:dhruv@cluster0.nmyvfvo.mongodb.net/SocietyDB?retryWrites=true&w=majority";
+mongoose.connect(DB,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 }).then(()=>{
