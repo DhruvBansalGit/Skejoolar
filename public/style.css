@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .navbar{
     display: flex;
@@ -133,7 +134,8 @@ font-size: 18px;
     padding-left: 30px;
     padding-right: 33px;
     color: white;
-    background-color: rgba(7, 37, 90, 0.2);
+    /* background-color: rgba(7, 37, 90, 0.2); */
+    background-color:#202746;
     /* box-shadow: 10px 10px 4px 4px rgba(51,169,254,.2); */
 }
 .left{
@@ -158,7 +160,8 @@ font-size: 18px;
 /*third Section*/
 .contact{
     height: 800px;
-    background-color: rgb(209, 255, 255);
+    background-color: #12181B;
+    color: white;
 }
 .text-center{
     text-align: center;
@@ -169,26 +172,42 @@ font-size: 18px;
 .Contact-form{
     max-width:62%;
     margin: 42px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .form-input{
-    text-align: center;
-    padding: 5px 3px;
-    margin: 18px 0;
-    width: 100%;
-    font-size: 19px;
-    border: 2px solid black;
-    border-radius: 8px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* text-align: center; */
+        padding: 5px 3px;
+        margin: 18px 0;
+        width: 80%;
+        font-size: 19px;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        background: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        border-bottom: 2px solid purple;
 }
+/* .form-input::before{
+    content:"";
+    height: 3px;
+    width: 50%;
+    background-color: white;
+} */
 textarea{
     margin: auto;
 }
 .btn-dark{
     display: block;
     margin: 6px auto;
-    width: 40%;
+    width: 30%;
     color: black;
     border: 2px solid black;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+    border-radius: 20px;
 }
 .footer{
     align-items: center;
@@ -220,8 +239,9 @@ html{
 }
 body{
     scroll-behavior: smooth;
-    background-color: #121e2a
+    background-color: #0E0F34
 }
 .reset{
-    width: 25%;
+    width: 20%;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
 }
